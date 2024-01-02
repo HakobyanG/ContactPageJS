@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #259592;
+}
+
+#clickableDiv {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#contactsContainer {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact {
+    display: block;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #259592;
+    border-radius: 4px;
+}
+
+.contact:hover {
+    background-color: #26bdb8;
+}
+
+.contact img {
+    float: right;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.edit-btn, .delete-btn, .more-btn {
+    margin: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.edit-btn{
+    background-color: rgb(165, 186, 87);
+    border-radius: 4px;
+}
+
+.edit-btn:hover {
+    background-color: rgb(92, 108, 36);
+}
+
+.delete-btn:hover {
+    background-color: rgb(125, 38, 38);
+}
+
+.delete-btn{
+    background-color: rgb(196, 73, 73);
+    border-radius: 4px;
+}
+
+.more-btn:hover {
+    background-color: rgb(131, 141, 92);
+}
+
+.more-btn{
+    background-color: rgb(204, 223, 135);
+    border-radius: 4px;
+}
+
+.addButton{
+    background-color: aqua;
+    height: 80px;
+    width: 80px;
+    border-radius: 32px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.addButton:hover {
+    background-color: #45a049;
+}
