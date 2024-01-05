@@ -6,7 +6,7 @@ let contacts = [
         data: '00/00/0000',
         location: 'Armenia' },
     {   id: 2, 
-        name: 'Garnik ', 
+        name: 'User ', 
         phone: '+37412345678', 
         picture: 'https://www.wilsoncenter.org/sites/default/files/media/images/person/james-person-1.jpg',
         data: '22/22/2222',
@@ -60,39 +60,11 @@ function renderContacts() {
     });
 }
 
-function moreContact(contactId){
-    a+=1;
-    if (b){
-        const contactList = document.getElementById('contactsContainer');
-        const contact = contacts.find(c => c.id === contactId);
-
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `
-            <img src="${contact.picture}" alt="Profile Picture" width="100"><br>
-            <strong>${contact.name}</strong><br>
-            Phone: ${contact.phone}<br>
-            Date of Birth: ${contact.data}<br>
-            Location: ${contact.location}<br>
-        `;
-        contactList.appendChild(listItem);
-        a++;
-    } else {
-        renderContacts();
-        a = 0;
-        b = true;
-    }
-    if (a==2){
-        b = false;
-        a = 0;
-    }
-
-}
-
 function addContact() {
     const name = prompt('Enter the contact name:');
-    const phone = prompt('Enter the contact phone:');
+    const phone = prompt('Enter the contact phone:(only number)');
     const picture = prompt('Enter the URL of the contact picture:');
-    const data = prompt('Enter the contact data of birth:');
+    const data = prompt('Enter the contact data of birth:dd/mm/yyyy');
     const location = prompt('Enter the contact location:');
     const isValid = /^[0-9+]+$/.test(phone);
 
@@ -150,6 +122,34 @@ function deleteContact(contactId) {
         alert('Deletion canceled.');
     }
     
+}
+
+function moreContact(contactId){
+    a+=1;
+    if (b){
+        const contactList = document.getElementById('contactsContainer');
+        const contact = contacts.find(c => c.id === contactId);
+
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `
+            <img src="${contact.picture}" alt="Profile Picture" width="100"><br>
+            <strong>${contact.name}</strong><br>
+            Phone: ${contact.phone}<br>
+            Date of Birth: ${contact.data}<br>
+            Location: ${contact.location}<br>
+        `;
+        contactList.appendChild(listItem);
+        a++;
+    } else {
+        renderContacts();
+        a = 0;
+        b = true;
+    }
+    
+    if (a==2){
+        b = false;
+        a = 0;
+    }
 }
 
 renderContacts();

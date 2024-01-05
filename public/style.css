@@ -2,7 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #259592;
+    background: linear-gradient(to bottom right, #3498db, #2ecc71);
+    margin: 0;
+    color: #35584b;       
+    height: 100vh;
 }
 
 #clickableDiv {
@@ -21,8 +24,8 @@ body {
     max-width: 450px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: linear-gradient(to bottom right, #3498db, #2ecc71);
+    box-shadow: 0 0 20px rgba(52, 74, 77, 0.9);
     border-radius: 8px;
 }
 
@@ -31,8 +34,9 @@ body {
     align-items: center;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #259592;
+    background-color: linear-gradient(to bottom right, #578bae, #5bbf85);
     border-radius: 4px;
+    box-shadow: 0 0 20px rgba(41, 71, 75, 0.2);
 }
 
 .contact:hover {
@@ -52,40 +56,45 @@ body {
 }
 
 .edit-btn{
-    background-color: rgb(165, 186, 87);
+    background-color: rgb(77, 163, 163);
     border-radius: 4px;
+    color: #a2e8d9;
 }
 
 .edit-btn:hover {
-    background-color: rgb(92, 108, 36);
+    background-color: rgb(143, 166, 57);
 }
 
 .delete-btn:hover {
-    background-color: rgb(125, 38, 38);
+    background-color: rgb(184, 56, 56);
 }
 
 .delete-btn{
-    background-color: rgb(196, 73, 73);
+    background-color: rgb(77, 163, 163);
     border-radius: 4px;
+    color: #a2e8d9;
 }
 
 .more-btn:hover {
-    background-color: rgb(131, 141, 92);
+    background-color: rgb(93, 160, 196);
 }
 
 .more-btn{
-    background-color: rgb(204, 223, 135);
+    background-color: rgb(77, 163, 163);
     border-radius: 4px;
+    color: #a2e8d9;
 }
 
 .addButton{
-    background-color: aqua;
+    color: #a2e8d9;
+    background-color: rgb(77, 163, 163);
     height: 80px;
     width: 80px;
     border-radius: 32px;
     margin-left: 40px;
     cursor: pointer;
 }
+
 .addButton:hover {
     background-color: #45a049;
 }
